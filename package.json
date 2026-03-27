@@ -1,0 +1,23 @@
+{
+  "name": "farmer-platform",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c green,blue \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:web": "npm --workspace @farmer/web run dev",
+    "dev:api": "npm --workspace @farmer/api run dev",
+    "build": "npm run -ws build",
+    "lint": "npm run -ws lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

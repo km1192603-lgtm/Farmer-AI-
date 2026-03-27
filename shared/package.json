@@ -1,0 +1,11 @@
+{
+  "name": "@farmer/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "echo \"Shared package build placeholder\"",
+    "lint": "echo \"No lints configured for shared\""
+  }
+}
